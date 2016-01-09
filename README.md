@@ -45,27 +45,27 @@ Code implementation for a group project on Distributed Systems module
 </ul>
 </li>
 </ol>
-<h5>The second phase is to design and develop a socket-based solution to find the files requested by different nodes.</h5> Query process is as follows:
+<p><h5>The second phase is to design and develop a socket-based solution to find the files requested by different nodes.</h5> Query process is as follows:</p>
 <ol>
 <li>Nodes generate requests for random file names.</li>
 <li>Each request results in a query that is propagated in the network to find a node (Y) containing the file.</li>
 <li>Node Y responds to the querying node with its address, which may be used to download the file.</li>
 </ol>
-<h5><p>Your solution for Phase 2 should satisfy the following requirements:</p></h5>
+<h5>Your solution for Phase 2 should satisfy the following requirements:</h5>
 <ul>
 <li>Nodes will communicate using UDP and will follow the message format given in Section 4.</li>
 <li>The system should continue to operate, albeit with degraded performance, even when some nodes fail.</li>
 <li>Use the given list of file names and queries to demonstrate your solution.</li>
 </ul>
-_No need to implement file transfer between nodes._
+_<p>No need to implement file transfer between nodes.</p>_
 
-<h5>The third phase is to extend your solution using RPCs or web services.</h5> Your modified solution in Phase 3 should satisfy the following requirements:
+<p><h5>The third phase is to extend your solution using RPCs or web services.</h5> Your modified solution in Phase 3 should satisfy the following requirements:</p>
 <ul>
 <li>Implementation may be based on either RPCs or web services. If you have already written web services, you are recommended to extend the solution using RPCs. Otherwise, it is recommended to use web services.</li>
 <li>Update the Phase 2 design to reflect the RPCs or web services based query resolution. No need to modify the communication with the BS or neighbors while setting up the network. You may change the message format, if required.</li>
 <li>Modify program in Phase 2 to reflect the RPCs or web services based implementation.</li>
 </ul>
-<h5><p>The final phase is to analyze the performance of the solutions developed in 2<sup>nd</sup> and 3<sup>rd</sup> phases.</p></h5>
+<h5>The final phase is to analyze the performance of the solutions developed in 2<sup>nd</sup> and 3<sup>rd</sup> phases.</h5>
 <h3>3. Steps</h3>
 <ol>
 <li>Prepare a design document describing how you will implement this solution.
