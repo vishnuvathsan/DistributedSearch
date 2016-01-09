@@ -1,0 +1,38 @@
+Requirements:
+`````````````
+    JDK 1.7 or latest
+    Apache Maven
+
+
+How to compile?
+``````````````
+Execute the following comand from the 'Distributed Search' directory
+	mvn compile
+How to start?
+````````````
+1. Run the BootstrapServer
+    Linux:
+        sh run-bootstrap.sh
+
+    Windows:
+        run-bootstrap.bat
+
+2. Run a Node
+    Linux:
+        sh run-node.sh
+
+    Windows:
+        run-node.bat
+
+It will start a new node using a random port. You can start any number of nodes as you want and use the Terminal to interact with the node.
+
+
+Search a movie
+``````````````
+    1. Once a Node is started, enter 1 (Search) as the input.
+
+    2. Enter the movie name to search
+
+Disconnect a node
+`````````````````
+    1. Once a Node is started, enter 2 (Disconnect) as the input.
