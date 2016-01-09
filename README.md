@@ -58,6 +58,7 @@ __<p>Your solution for Phase 2 should satisfy the following requirements:</p>__
 <li>Use the given list of file names and queries to demonstrate your solution.</li>
 </ul>
 _No need to implement file transfer between nodes._
+
 __The third phase is to extend your solution using RPCs or web services.__ Your modified solution in Phase 3 should satisfy the following requirements:
 <ul>
 <li>Implementation may be based on either RPCs or web services. If you have already written web services, you are recommended to extend the solution using RPCs. Otherwise, it is recommended to use web services.</li>
