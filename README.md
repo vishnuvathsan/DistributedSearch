@@ -47,27 +47,27 @@ Code implementation for a group project on Distributed Systems module
 </ol>
 __The second phase is to design and develop a socket-based solution to find the files requested by different nodes.__ Query process is as follows:
 <ol>
-<li>- [ ] Nodes generate requests for random file names.</li>
-<li>- [ ] Each request results in a query that is propagated in the network to find a node (Y) containing the file.</li>
-<li>- [ ] Node Y responds to the querying node with its address, which may be used to download the file.</li>
+<li>Nodes generate requests for random file names.</li>
+<li>Each request results in a query that is propagated in the network to find a node (Y) containing the file.</li>
+<li>Node Y responds to the querying node with its address, which may be used to download the file.</li>
 </ol>
 __<p>Your solution for Phase 2 should satisfy the following requirements:</p>__
 <ul>
-<li>- [ ] Nodes will communicate using UDP and will follow the message format given in Section 4.</li>
-<li>- [ ] The system should continue to operate, albeit with degraded performance, even when some nodes fail.</li>
-<li>- [ ] Use the given list of file names and queries to demonstrate your solution.</li>
+<li>Nodes will communicate using UDP and will follow the message format given in Section 4.</li>
+<li>The system should continue to operate, albeit with degraded performance, even when some nodes fail.</li>
+<li>Use the given list of file names and queries to demonstrate your solution.</li>
 </ul>
 _No need to implement file transfer between nodes._
 <p>The third phase is to extend your solution using RPCs or web services. Your modified solution in Phase 3 should satisfy the following requirements:</p>
 <ul>
-<li>- [ ] Implementation may be based on either RPCs or web services. If you have already written web services, you are recommended to extend the solution using RPCs. Otherwise, it is recommended to use web services.</li>
-<li>- [ ] Update the Phase 2 design to reflect the RPCs or web services based query resolution. No need to modify the communication with the BS or neighbors while setting up the network. You may change the message format, if required.</li>
-<li>- [ ] Modify program in Phase 2 to reflect the RPCs or web services based implementation.</li>
+<li>Implementation may be based on either RPCs or web services. If you have already written web services, you are recommended to extend the solution using RPCs. Otherwise, it is recommended to use web services.</li>
+<li>Update the Phase 2 design to reflect the RPCs or web services based query resolution. No need to modify the communication with the BS or neighbors while setting up the network. You may change the message format, if required.</li>
+<li>Modify program in Phase 2 to reflect the RPCs or web services based implementation.</li>
 </ul>
 __<p>The final phase is to analyze the performance of the solutions developed in 2<sup>nd</sup> and 3<sup>rd</sup> phases.</p>__
 <h3>3. Steps</h3>
 <ol>
-<li>- [ ] Prepare a design document describing how you will implement this solution.
+<li>Prepare a design document describing how you will implement this solution.
 <ul>
 <li>Report should at least include expected topology, how to communicate among nodes, format of routing table, performance parameters, how to capture them, and pseudo codes (when possible).</li>
 <li>Use a layered design. Then you will be able to reuse part of this code in Phase 3.</li>
@@ -76,9 +76,9 @@ __<p>The final phase is to analyze the performance of the solutions developed in
 <li>Actively participate to discussions on Yammer and talk to lecturer whenever you have concerns.</li>
 </ul>
 </li>
-<li>- [ ] Develop Phase 2 of the solution.</li>
-<li>- [ ] Develop Phase 3 of the solution.</li>
-<li>- [ ] Conduct a performance analysis using solutions for both Phase 2 and Phase 3.
+<li>Develop Phase 2 of the solution.</li>
+<li>Develop Phase 3 of the solution.</li>
+<li>Conduct a performance analysis using solutions for both Phase 2 and Phase 3.
 <ul>
 <li>Ensure that at least 10 nodes are in the system.</li>
 <li>You are expected to demonstrate the operation of the system as described above. In addition, prepare a report with the following results:<ol>
