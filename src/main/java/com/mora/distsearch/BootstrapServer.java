@@ -81,9 +81,9 @@ public class BootstrapServer extends Server {
 
 					int randomA = RANDOM_NUMBER_GENERATOR.nextInt(bound);
 					int randomB = RANDOM_NUMBER_GENERATOR.nextInt(bound);
-					while (randomA == randomB) {
-						randomB = RANDOM_NUMBER_GENERATOR.nextInt(bound);
-					}
+//					while (randomA == randomB) {
+//						randomB = RANDOM_NUMBER_GENERATOR.nextInt(bound);
+//					}
 					reply += "2 " + registeredNodes.get(randomA).getIp() + " " + registeredNodes.get(randomA).getPort()
 							+ " " + registeredNodes.get(randomB).getIp() + " " + registeredNodes.get(randomB).getPort();
 				}

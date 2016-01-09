@@ -39,4 +39,28 @@ public class NodeInfo {
     public void setUsername(String username) {
         this.username = username;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        NodeInfo nodeInfo = (NodeInfo) o;
+
+        if (port != nodeInfo.port) return false;
+        return ip.equals(nodeInfo.ip);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = ip.hashCode();
+        result = 31 * result + port;
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return username + " @ " + ip + ":" + port;
+    }
 }
