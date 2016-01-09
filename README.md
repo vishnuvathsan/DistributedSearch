@@ -100,7 +100,7 @@ __<p>The final phase is to analyze the performance of the solutions developed in
 </ol>
 <h3>4. Protocol</h3>
 <p>We will use a character-based protocol to make it easy to debug. You may issue commands through Telnet to the BS and other nodes to check whether commands are correctly responded. Each message starts with a <em>command</em> (in uppercase characters) that can be up to <em>n</em> characters long. Rest of the message will depend on the command. Each element in the command is separated by a <em>white space</em>.</p>
-<h5>4.1 Register/Unregister With Bootstrap Server</h5>
+<h4>4.1 Register/Unregister With Bootstrap Server</h4>
 <p><strong>Register Request message – used to register with the BS</strong></p>
 <p><span style="font-family: Courier New,Courier;" face="Courier New,Courier">length REG IP_address port_no username</span></p>
 <ul>
@@ -156,12 +156,12 @@ __<p>The final phase is to analyze the performance of the solutions developed in
 </li>
 </ul>
 <p><em>For any message BS can't understand it will send an error of the format in Section 4.5.</em></p>
-<h6>Testing</h6>
+<h5>Testing</h5>
 <p>You can use netcat to test communication with the bootstrap server. Try the following from a unix/linux terminal.<em><br /></em></p>
 <p style="margin-left: 80px;"><span style="font-family: courier new,courier,monospace;">$ nc -u node1.cse.mrt.ac.lk 5000</span></p>
 <p>Then issue register and unregister commands. e.g.:</p>
 <p style="margin-left: 90px;"><span style="font-family: courier new,courier,monospace;">0033 REG 192.248.230.150 57000 vwb</span></p>
-<h5>4.2 Join Distributed System</h5>
+<h4>4.2 Join Distributed System</h4>
 <p><strong>Request message – used to indicate presence of new node to other nodes that is found from BS</strong></p>
 <p><span style="font-family: Courier New,Courier;" face="Courier New,Courier">length JOIN IP_address port_no</span></p>
 <ul>
@@ -184,7 +184,7 @@ __<p>The final phase is to analyze the performance of the solutions developed in
 </ul>
 </li>
 </ul>
-<h5>4.3 Leave Distributed System</h5>
+<h4>4.3 Leave Distributed System</h4>
 <p><strong>Request message – used to indicate this node is leaving the distributed system</strong></p>
 <p><span style="font-family: Courier New,Courier;" face="Courier New,Courier">length LEAVE IP_address port_no</span></p>
 <ul>
@@ -206,7 +206,7 @@ __<p>The final phase is to analyze the performance of the solutions developed in
 </ul>
 </li>
 </ul>
-<h5>4.4 Search for a File Name</h5>
+<h4>4.4 Search for a File Name</h4>
 <p><strong>Request message – Used to locate a key in the network</strong></p>
 <p><span style="font-family: Courier New,Courier;" face="Courier New,Courier">length SER IP port</span><span style="font-family: Courier New,Courier;" face="Courier New,Courier"> file_name</span><span style="font-family: Courier New,Courier;" face="Courier New,Courier"> hops</span></p>
 <ul>
@@ -237,7 +237,7 @@ __<p>The final phase is to analyze the performance of the solutions developed in
 <li><i>hops</i> – Hops required to find the file(s).</li>
 <li><i>filename</i> – Actual name of the file.</li>
 </ul>
-<h5>4.5 Error Message</h5>
+<h4>4.5 Error Message</h4>
 <p><span style="font-family: Courier New,Courier;" face="Courier New,Courier">length ERROR</span></p>
 <ul>
 <li><i>0010 ERROR</i></li>
